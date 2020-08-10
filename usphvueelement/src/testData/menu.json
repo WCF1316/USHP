@@ -1,0 +1,64 @@
+[
+    {
+        "icon": "el-icon-menu",
+        "menuName": "商品管理",
+        "url": "/view/product/index",
+        "children": []
+    },
+    {
+        "icon": "el-icon-s-custom",
+        "menuName": "用户信息管理",
+        "url": "/view/userProfile/Index",
+        "children": []
+    },
+    {
+        "icon": "el-icon-user",
+        "menuName": "我的信息",
+        "url": "/view/myProfile/Index",
+        "children": []
+    },
+    {
+        "icon": "el-icon-s-tools",
+        "menuName": "系统管理",
+        "url": "",
+        "children": [
+            {
+                "icon": null,
+                "menuName": "选项1",
+                "url": "/view/myProfile/Index",
+                "children": []
+            },
+            {
+                "icon": null,
+                "menuName": "选项1",
+                "url": "/view/myProfile/Index",
+                "children": []
+            },
+            {
+                "icon": null,
+                "menuName": "分组一",
+                "url": "",
+                "children": [
+                    {
+                        "icon": null,
+                        "menuName": "选项1",
+                        "url": "/view/myProfile/Index",
+                        "children": []
+                    }
+                ]
+            },{
+                "icon": null,
+                "menuName": "分组二",
+                "url": "",
+                "children": [
+                    {
+                        "icon": null,
+                        "menuName": "选项1",
+                        "url": "/view/myProfile/Index",
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    }
+]
