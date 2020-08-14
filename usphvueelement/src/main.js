@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import store from './store'    //引入 vuex
 import App from './App' 
 //导入elementUi组件
 import ElementUI from 'element-ui';
@@ -9,9 +10,9 @@ import 'element-ui/lib/theme-chalk/index.css';
 import axios from 'axios'
 import VueAxios from 'vue-axios'  
 //导入路由
-import router from './router' 
+import router from './router'  
 Vue.use(ElementUI);
-Vue.use(VueAxios, axios)
+Vue.use(VueAxios, axios);
 
 // 解决页面路由重复点击时报错，场景：如多次点击导航菜单项时会报红色错误
 const originalPush = Vue.prototype.push
@@ -25,5 +26,6 @@ new Vue({
   el: '#app',
   //配置路由
   router,
+  store,
   render: h => h(App)
 })

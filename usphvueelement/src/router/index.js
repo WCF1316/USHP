@@ -35,48 +35,48 @@ export default new router({
                 path: "/Main",
                 name: "main",
                 redirect: "/view/product/index",
-                meta: { title: '商品管理', icon: null, noCache: true }
+                meta: { title: '商品管理', icon: null, noCache: true,type:"" }
 
             },
             {
                 path: "/view/product/index",
                 name: "productIndex",
                 component: productIndex,
-                meta:{title:'商品管理', icon: null, noCache: true }
+                meta:{title:'商品管理', icon: null, noCache: true,type:"" }
 
             }, {
                 path: "/view/userProfile/index",
                 name: "userProfileIndex",
                 component: userProfileIndex,
-                meta:{title:'用户信息管理', icon: null, noCache: true }
+                meta:{title:'用户管理', icon: null, noCache: true,type:"" }
 
             },
             , {
                 path: "/view/myProfile/index",
                 name: "myProfileIndex",
                 component: myProfileIndex,
-                meta:{title:'我的信息管理', icon: null, noCache: true }
+                meta:{title:'我的信息', icon: null, noCache: true,type:"" }
 
             },{
                 path: "", 
-                meta:{title:'系统管理', icon: null, noCache: true },
+                meta:{title:'系统管理', icon: null, noCache: true,type:"" },
                 children:[ {
                         path: "/view/userProfile/index",
                         name: "userProfileIndex",
                         component: userProfileIndex,
-                        meta:{title:'选项2', icon: null, noCache: true }
+                        meta:{title:'选项2', icon: null, noCache: true ,type:""}
         
                     }, {
                         path: "/view/userProfile/index",
                         name: "userProfileIndex",
                         component: userProfileIndex,
-                        meta:{title:'选项11', icon: null, noCache: true }
+                        meta:{title:'选项11', icon: null, noCache: true ,type:""}
         
                     }, {
                         path: "/view/userProfile/index",
                         name: "userProfileIndex",
                         component: userProfileIndex,
-                        meta:{title:'选项12', icon: null, noCache: true }
+                        meta:{title:'选项12', icon: null, noCache: true ,type:""}
         
                     }
                 ]
